@@ -22,7 +22,7 @@ public class Main extends Application {
 
         Scene scene = new Scene(root);
 
-        primaryStage.setTitle("Main Application");
+        primaryStage.setTitle("JavaMail");
         primaryStage.setScene(scene);
         primaryStage.show();
     }

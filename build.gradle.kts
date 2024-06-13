@@ -1,16 +1,8 @@
 plugins {
     id("org.openjfx.javafxplugin") version "0.0.12"
-    id("application")
+    application
     id("java")
 }
-
-javafx {
-    val javafxPath  = "C:\\Program Files\\Java\\javafx-sdk-22.0.1\\lib"
-    modules("javafx.controls", "javafx.fxml")
-}
-
-group = "org.example"
-version = "1.0-SNAPSHOT"
 
 repositories {
     mavenCentral()
@@ -24,4 +16,12 @@ dependencies {
     implementation("org.openjfx:javafx-fxml:17")
 }
 
+javafx {
+    version = "19"
+    modules("javafx.controls", "javafx.fxml")
+}
 
+application {
+    mainModule = "fr.javamail"
+    mainClass = "fr.javamail.scripts.Main"
+}
